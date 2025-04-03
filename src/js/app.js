@@ -40,7 +40,9 @@ function render(variables = {}) {
 
           <h2>${variables.role == null ? "Role" : variables.role}</h2>
 
-          <h3>${variables.city == null ? "City" : variables.city}</h3>
+          <h3>${variables.city == null ? "City" : variables.city + ""},${
+    variables.country == null ? " Country" : variables.country
+  }</h3>
 
 
           <ul class=${
